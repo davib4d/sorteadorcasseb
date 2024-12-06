@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <div>
+        <h1>Sorteador de números</h1>
+        <h3>Ferramentas online</h3>
+        <h2>Sorteador de números aleatórios</h2>
+        <p>Sorteador de números online e gratuito. Selecione o intervalo e clique em sortear número. Pode usar também para fazer sorteios no Facebook, Instagram e outras redes sociais.</p>
+        <p>Opções</p>
+
+        <p style="color: rgba(0, 0, 0, 0.651);">1. Sortear <input type="number" min="1" max="1000" id="numVezes" value="1" style="width: 45px;"> número entre <input type="number" min="0" id="minimo" value="0" style="width: 45px;"> e <input type="number" min="1" id="maximo" value="10" style="width: 45px;">.</p>
+        <p id="validacao" style="color: red; font-size: smaller;"></p>
+
+        <p style="color: rgba(0, 0, 0, 0.651);">2. Deseja nomear o seu sorteio? (opcional)</p>
+        <input id="textoSorteio" type="text" placeholder="Sorteio de raquete de Tenis de Mesa" style="width: 266px;">
+
+        <br>
+        <br>
+
+        <button onclick="realizarSorteio(); mostrarIntervalo(false);" class="botaoSorteio"></button>
+
+        <br>
+        <br>
+
+        <div id="resultado">
+            <table border="1" id="invisivel" class="tdsaida">
+                <td>
+                    <b>Número Gerado:</b>
+                    <center>
+                        <h3><b id="nomeSorteio"></b></h3>
+                        <p id="saida"></p>
+                        <p id="intervalo"></p>
+                    </center>
+                </td>
+            </table>
+        </div>
+
+        <br>
+        <br>
+
+        <button onclick="somarNumeros(); mostrarIntervalo(true);" class="botaoSomar"></button>
+
+        <br>
+        <br>
+    </div>
+
+</div>
+</body>
+</html>

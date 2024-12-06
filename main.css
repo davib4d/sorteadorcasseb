@@ -1,0 +1,57 @@
+.botaoSorteio{
+    margin-left: 275px;
+    background-image: url('Sortear.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100px; 
+    height: 60px; 
+    border: none;
+    cursor: pointer; 
+    border-radius: 20%;
+}
+#saida{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: xx-large;
+    color: rgb(68, 72, 133);
+}
+.tdsaida{
+    width: 685px;
+    height: 10px;
+}
+#invisivel{
+    visibility: hidden;
+}
+span{
+    text-decoration: underline;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    border-collapse: collapse;
+}
+.container{
+    background-color: rgb(234, 235, 225);
+    max-width: 725px; 
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    box-sizing: border-box;
+}
+.botaoSomar{
+    margin-left: 275px;
+    background-image: url('Somar.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100px; 
+    height: 60px; 
+    border: none;
+    cursor: pointer; 
+    border-radius: 20%;
+}
+#resultado{
+    visibility: hidden;
+}
